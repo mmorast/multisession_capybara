@@ -10,6 +10,9 @@ module CapybaraMultisession
       yield self
     end
 
+    def add_session(session_name, session)
+      session_manager.add(session_name, session)
+    end
   end
 
   CapybaraMultisession.configure do |config|

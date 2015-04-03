@@ -14,6 +14,8 @@ require 'minitest/reporters'
 require 'capybara/dsl'
 require 'rack/test'
 
+include Capybara::DSL
+
 #Setup minitest reporters.
 Minitest::Reporters.use!  [Minitest::Reporters::ProgressReporter.new, Minitest::Reporters::RubyMineReporter.new ]
 
